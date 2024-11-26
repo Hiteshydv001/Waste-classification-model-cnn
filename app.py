@@ -11,106 +11,59 @@ model = load_model("waste_classification_model.h5")
 # Define the class labels
 classes = {0: "Organic Waste (O)", 1: "Inorganic Waste (R)"}
 
-# Function to switch between dark and light mode CSS
-def get_mode_styles(is_dark_mode):
-    if is_dark_mode:
-        return """
-            <style>
-            body {
-                background-color: #121212;
-                color: #ffffff;
-                font-family: Arial, sans-serif;
-            }
-            .main {
-                background: linear-gradient(to right, #4B0082, #8A2BE2);
-                border-radius: 15px;
-                padding: 20px;
-                margin: 10px;
-                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            }
-            .stButton button {
-                background-color: #6200ea;
-                color: white;
-                border: none;
-                border-radius: 5px;
-                padding: 10px 20px;
-                cursor: pointer;
-            }
-            .stButton button:hover {
-                background-color: #3700b3;
-            }
-            .header {
-                font-family: 'Arial Black', sans-serif;
-                font-size: 35px;
-                color: #bb86fc;
-                text-align: center;
-            }
-            .subheader {
-                font-family: 'Arial', sans-serif;
-                font-size: 22px;
-                color: #ffffff;
-                text-align: center;
-            }
-            hr {
-                border: none;
-                height: 1px;
-                background: #ddd;
-                margin: 20px 0;
-            }
-            </style>
-        """
-    else:
-        return """
-            <style>
-            body {
-                background: rgba(255, 255, 255, 0.8);
-                font-family: Arial, sans-serif;
-                color: #000;
-            }
-            .main {
-                background: linear-gradient(to right, #764BA2, #667EEA);
-                border-radius: 15px;
-                padding: 20px;
-                margin: 10px;
-                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            }
-            .stButton button {
-                background-color: #4CAF50;
-                color: white;
-                border: none;
-                border-radius: 5px;
-                padding: 10px 20px;
-                cursor: pointer;
-            }
-            .stButton button:hover {
-                background-color: #45a049;
-            }
-            .header {
-                font-family: 'Arial Black', sans-serif;
-                font-size: 35px;
-                color: #4CAF50;
-                text-align: center;
-            }
-            .subheader {
-                font-family: 'Arial', sans-serif;
-                font-size: 22px;
-                color: #000;
-                text-align: center;
-            }
-            hr {
-                border: none;
-                height: 1px;
-                background: #ddd;
-                margin: 20px 0;
-            }
-            </style>
-        """
+# Add custom CSS to enhance UI design with smaller font sizes
+# Update the background gradient style
+import streamlit as st
 
-# Initial dark mode setting
-is_dark_mode = st.sidebar.checkbox("Switch to Dark Mode", value=False)
-
-# Apply CSS styles based on the mode
-st.markdown(get_mode_styles(is_dark_mode), unsafe_allow_html=True)
+st.markdown(
+    """
+    <style>
+    body {
+        background: rgba(255, 255, 255, 0.8);
+        font-family: Arial, sans-serif;
+        color: #fff; /* Text color to contrast with the background */
+    }
+    .main {
+        background: linear-gradient(to right, #764BA2, #667EEA);  /* Gradient applied directly */
+        border-radius: 15px;
+        padding: 20px;
+        margin: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    .stButton button {
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 14px;  /* Reduced font size */
+    }
+    .stButton button:hover {
+        background-color: #45a049;
+    }
+    .header {
+        font-family: 'Arial Black', sans-serif;
+        font-size: 35px;  /* Reduced font size */
+        color: #4CAF50;
+        text-align: center;
+    }
+    .subheader {
+        font-family: 'Arial', sans-serif;
+        font-size: 22px;  /* Reduced font size */
+        color: #ffffff;
+        text-align: center;
+    }
+    hr {
+        border: none;
+        height: 1px;
+        background: #ddd;
+        margin: 20px 0;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True,
+)
 
 # Header
 st.markdown('<div class="header">🌿 Waste Classification App</div>', unsafe_allow_html=True)
@@ -185,10 +138,11 @@ elif input_mode == "Camera Capture":
             st.image(result_image, caption="Result with Bounding Box", use_column_width=True)
 
 # Footer
+# Footer with personal links and acknowledgment
 st.markdown("<hr>", unsafe_allow_html=True)
 st.markdown(
     """
-    <div style="text-align: center; font-family: Arial, sans-serif; font-size: 14px;">
+    <div style="text-align: center; font-family: Arial, sans-serif; font-size: 14px;">  <!-- Reduced font size -->
         🌟 Powered by <b style="font-size: 16px;">TensorFlow</b>, <b style="font-size: 16px;">OpenCV</b>, and <b style="font-size: 16px;">Streamlit</b><br><br>
         <b style="font-size: 16px;">Made by:</b> Hitesh Kumar<br>
         <a href="https://www.linkedin.com/in/hitesh-kumar-aiml/" target="_blank" style="color: #333; font-size: 16px;">LinkedIn</a> | 
@@ -198,4 +152,38 @@ st.markdown(
     </div>
     """,
     unsafe_allow_html=True,
+)
+
+
+import streamlit as st
+import requests
+
+# Fetch the raw content of the README file
+url = "https://raw.githubusercontent.com/Hiteshydv001/Waste-classification-model-cnn/main/README.md"
+response = requests.get(url)
+
+# Apply custom CSS for padding and styling
+st.markdown(
+    """
+    <style>
+    .markdown-container {
+        padding-top: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+        background-color: #2e2e2e;  /* Dark background */
+        color: #ffffff;  /* White text for better visibility */
+        border-radius: 8px;
+        box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+        font-size: 16px;  /* Adjust text size */
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
+# Display the README content with custom container
+st.markdown(
+    f'<div class="markdown-container">{response.text}</div>',
+    unsafe_allow_html=True
 )
