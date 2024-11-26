@@ -16,7 +16,6 @@ st.markdown(
     """
     <style>
     body {
-        background: linear-gradient(to right, #5a85c6, #248ec5, #0095ba, #009aa9, #1a9d94); 
         font-family: Arial, sans-serif;
         color: #fff; /* Text color to contrast with the background */
     }
