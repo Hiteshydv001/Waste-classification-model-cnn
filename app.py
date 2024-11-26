@@ -150,3 +150,37 @@ st.markdown(
     """,
     unsafe_allow_html=True,
 )
+
+
+import streamlit as st
+import requests
+
+# Fetch the raw content of the README file
+url = "https://raw.githubusercontent.com/Hiteshydv001/Waste-classification-model-cnn/main/README.md"
+response = requests.get(url)
+
+# Apply custom CSS for padding and styling
+st.markdown(
+    """
+    <style>
+    .markdown-container {
+        padding-top: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+        background-color: #2e2e2e;  /* Dark background */
+        color: #ffffff;  /* White text for better visibility */
+        border-radius: 8px;
+        box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+        font-size: 16px;  /* Adjust text size */
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
+# Display the README content with custom container
+st.markdown(
+    f'<div class="markdown-container">{response.text}</div>',
+    unsafe_allow_html=True
+)
