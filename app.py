@@ -17,13 +17,15 @@ st.markdown(
     <style>
     body {
         font-family: Arial, sans-serif;
-        color: #fff; /* Text color to contrast with the background */
+        color: #fff;
+        background-color: #f4f4f9; /* Light background color for the body */
     }
     .main {
         border-radius: 15px;
         padding: 20px;
         margin: 10px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        background-color: #ffffff; /* White background for main content */
     }
     .stButton button {
         background-color: #4CAF50;
@@ -42,12 +44,18 @@ st.markdown(
         font-size: 35px;
         color: #4CAF50;
         text-align: center;
+        background-color: #333333; /* Dark background for the header */
+        padding: 10px;
+        border-radius: 10px;
     }
     .subheader {
         font-family: 'Arial', sans-serif;
         font-size: 20px;
         color: #ffffff;
         text-align: center;
+    }
+    .sidebar .sidebar-content {
+        background-color: #2f2f2f; /* Dark background for sidebar */
     }
     hr {
         border: none;
@@ -59,6 +67,7 @@ st.markdown(
     """,
     unsafe_allow_html=True,
 )
+
 
 # Header
 st.markdown('<div class="header">🌿 Waste Classification App</div>', unsafe_allow_html=True)
