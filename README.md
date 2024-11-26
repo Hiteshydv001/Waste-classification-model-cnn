@@ -1,6 +1,8 @@
 # Waste-classification-model-cnn
 Internship project: AICTE || SHELL || EDUNET FOUNDATION
 
+**Deployment Link:** [Demo at Streamlit](https://content-based-movie-recommend.streamlit.app/)
+
 # 🌿 Waste Classification App  
 
 [![Python](https://img.shields.io/badge/Python-3.12-blue.svg)](https://www.python.org/)  
