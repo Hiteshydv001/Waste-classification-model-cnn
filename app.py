@@ -16,16 +16,16 @@ st.markdown(
     """
     <style>
     body {
+        background: rgba(255, 255, 255, 0.8);
         font-family: Arial, sans-serif;
-        color: #fff;
-        background-color: #f4f4f9; /* Light background color for the body */
+        color: #fff; /* Text color to contrast with the background */
     }
     .main {
+        background-image: linear-gradient(to right, #5a85c6, #248ec5, #0095ba, #009aa9, #1a9d94);
         border-radius: 15px;
         padding: 20px;
         margin: 10px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        background-color: #ffffff; /* White background for main content */
     }
     .stButton button {
         background-color: #4CAF50;
@@ -34,28 +34,22 @@ st.markdown(
         border-radius: 5px;
         padding: 10px 20px;
         cursor: pointer;
-        font-size: 16px;
+        font-size: 14px;  /* Reduced font size */
     }
     .stButton button:hover {
         background-color: #45a049;
     }
     .header {
         font-family: 'Arial Black', sans-serif;
-        font-size: 35px;
+        font-size: 35px;  /* Reduced font size */
         color: #4CAF50;
         text-align: center;
-        background-color: #333333; /* Dark background for the header */
-        padding: 10px;
-        border-radius: 10px;
     }
     .subheader {
         font-family: 'Arial', sans-serif;
-        font-size: 20px;
+        font-size: 22px;  /* Reduced font size */
         color: #ffffff;
         text-align: center;
-    }
-    .sidebar .sidebar-content {
-        background-color: #2f2f2f; /* Dark background for sidebar */
     }
     hr {
         border: none;
