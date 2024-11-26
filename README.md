@@ -9,6 +9,8 @@ Internship project: AICTE || SHELL || EDUNET FOUNDATION
 
 An intuitive web-based application to classify waste into **Organic** or **Inorganic** categories, promoting sustainability and eco-friendly practices. The app leverages the power of **TensorFlow**, **OpenCV**, and **Streamlit** to deliver real-time predictions with an elegant user interface.
 
+![Upload Image](https://github.com/Hiteshydv001/Waste-classification-model-cnn/blob/main/Untitled%20design%20(1).gif)
+
 ---
 
 ## 🌟 Features
@@ -50,6 +52,8 @@ An intuitive web-based application to classify waste into **Organic** or **Inorg
 
 ### Demo
 ![Upload Image](https://github.com/Hiteshydv001/Waste-classification-model-cnn/blob/main/Untitled%20design.gif)
+
+![Upload Image](https://github.com/Hiteshydv001/Waste-classification-model-cnn/blob/main/Untitled%20design%20(1).gif)
 
 ---
 
