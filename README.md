@@ -48,8 +48,8 @@ An intuitive web-based application to classify waste into **Organic** or **Inorg
 ### Home Page
 ![Home Page](https://github.com/Hiteshydv001/Waste-classification-model-cnn/blob/main/Screenshot%202024-11-26%20221913.jpg)
 
-### Upload Image
-![Upload Image](https://via.placeholder.com/800x400?text=Upload+Image+Screenshot)
+### Demo
+![Upload Image](https://github.com/Hiteshydv001/Waste-classification-model-cnn/blob/main/Untitled%20design.gif)
 
 ---
 
