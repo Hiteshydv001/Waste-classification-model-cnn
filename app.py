@@ -11,24 +11,21 @@ model = load_model("waste_classification_model.h5")
 # Define the class labels
 classes = {0: "Organic Waste (O)", 1: "Inorganic Waste (R)"}
 
-# Add custom CSS to enhance UI design
+# Add custom CSS to enhance UI design with smaller font sizes
 st.markdown(
     """
     <style>
     body {
+        background: rgba(255, 255, 255, 0.8);
         font-family: Arial, sans-serif;
-        color: #fff;  /* Text color */
-        background-color: #f4f4f9;  /* Light background for the body */
-    }
-    .stApp {
-        background-color: #f4f4f9; /* Background color for the entire Streamlit app */
+        color: #fff; /* Text color to contrast with the background */
     }
     .main {
+        background-image: linear-gradient(to right, #5a85c6, #248ec5, #0095ba, #009aa9, #1a9d94);
         border-radius: 15px;
         padding: 20px;
         margin: 10px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        background-color: #ffffff; /* White background for the main content */
     }
     .stButton button {
         background-color: #4CAF50;
@@ -37,28 +34,22 @@ st.markdown(
         border-radius: 5px;
         padding: 10px 20px;
         cursor: pointer;
-        font-size: 16px;
+        font-size: 14px;  /* Reduced font size */
     }
     .stButton button:hover {
         background-color: #45a049;
     }
     .header {
         font-family: 'Arial Black', sans-serif;
-        font-size: 35px;
+        font-size: 35px;  /* Reduced font size */
         color: #4CAF50;
         text-align: center;
-        background-color: #333333; /* Dark background for the header */
-        padding: 10px;
-        border-radius: 10px;
     }
     .subheader {
         font-family: 'Arial', sans-serif;
-        font-size: 20px;
+        font-size: 22px;  /* Reduced font size */
         color: #ffffff;
         text-align: center;
-    }
-    .sidebar .sidebar-content {
-        background-color: #2f2f2f; /* Dark background for sidebar */
     }
     hr {
         border: none;
@@ -148,13 +139,13 @@ elif input_mode == "Camera Capture":
 st.markdown("<hr>", unsafe_allow_html=True)
 st.markdown(
     """
-    <div style="text-align: center; font-family: Arial, sans-serif; font-size: 15px;">
-        🌟 Powered by <b style="font-size: 18px;">TensorFlow</b>, <b style="font-size: 18px;">OpenCV</b>, and <b style="font-size: 18px;">Streamlit</b><br><br>
-        <b style="font-size: 18px;">Made by:</b> Hitesh Kumar<br>
-        <a href="https://www.linkedin.com/in/hitesh-kumar-aiml/" target="_blank" style="color: #0a66c2; font-size: 18px;">LinkedIn</a> | 
-        <a href="https://github.com/Hiteshydv001" target="_blank" style="color: #333; font-size: 18px;">GitHub</a><br><br>
-        🎉<b style="font-size: 18px;">Edunet-Shell Skills4Future AICTE Internship Project</b> (Nov-Dec)<br>
-        Focused on <b style="font-size: 18px;">Green Skills</b> & <b style="font-size: 18px;">AI</b>.
+    <div style="text-align: center; font-family: Arial, sans-serif; font-size: 14px;">  <!-- Reduced font size -->
+        🌟 Powered by <b style="font-size: 16px;">TensorFlow</b>, <b style="font-size: 16px;">OpenCV</b>, and <b style="font-size: 16px;">Streamlit</b><br><br>
+        <b style="font-size: 16px;">Made by:</b> Hitesh Kumar<br>
+        <a href="https://www.linkedin.com/in/hitesh-kumar-aiml/" target="_blank" style="color: #0a66c2; font-size: 16px;">LinkedIn</a> | 
+        <a href="https://github.com/Hiteshydv001" target="_blank" style="color: #333; font-size: 16px;">GitHub</a><br><br>
+        🎉<b style="font-size: 16px;">Edunet-Shell Skills4Future AICTE Internship Project</b> (Nov-Dec)<br>
+        Focused on <b style="font-size: 16px;">Green Skills</b> & <b style="font-size: 16px;">AI</b>.
     </div>
     """,
     unsafe_allow_html=True,
