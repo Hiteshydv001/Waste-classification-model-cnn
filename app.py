@@ -16,16 +16,19 @@ st.markdown(
     """
     <style>
     body {
-        background: rgba(255, 255, 255, 0.8);
         font-family: Arial, sans-serif;
-        color: #fff; /* Text color to contrast with the background */
+        color: #fff;  /* Text color */
+        background-color: #f4f4f9;  /* Light background for the body */
+    }
+    .stApp {
+        background-color: #f4f4f9; /* Background color for the entire Streamlit app */
     }
     .main {
-        background-image: linear-gradient(to right, #5a85c6, #248ec5, #0095ba, #009aa9, #1a9d94);
         border-radius: 15px;
         padding: 20px;
         margin: 10px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        background-color: #ffffff; /* White background for the main content */
     }
     .stButton button {
         background-color: #4CAF50;
@@ -34,22 +37,28 @@ st.markdown(
         border-radius: 5px;
         padding: 10px 20px;
         cursor: pointer;
-        font-size: 14px;  /* Reduced font size */
+        font-size: 16px;
     }
     .stButton button:hover {
         background-color: #45a049;
     }
     .header {
         font-family: 'Arial Black', sans-serif;
-        font-size: 35px;  /* Reduced font size */
+        font-size: 35px;
         color: #4CAF50;
         text-align: center;
+        background-color: #333333; /* Dark background for the header */
+        padding: 10px;
+        border-radius: 10px;
     }
     .subheader {
         font-family: 'Arial', sans-serif;
-        font-size: 22px;  /* Reduced font size */
+        font-size: 20px;
         color: #ffffff;
         text-align: center;
+    }
+    .sidebar .sidebar-content {
+        background-color: #2f2f2f; /* Dark background for sidebar */
     }
     hr {
         border: none;
@@ -61,7 +70,6 @@ st.markdown(
     """,
     unsafe_allow_html=True,
 )
-
 
 # Header
 st.markdown('<div class="header">🌿 Waste Classification App</div>', unsafe_allow_html=True)
