@@ -12,10 +12,7 @@ model = load_model("waste_classification_model.h5")
 classes = {0: "Organic Waste (O)", 1: "Inorganic Waste (R)"}
 
 # Add custom CSS to enhance UI design with smaller font sizes
-<<<<<<< HEAD
 # Update the background gradient style
-=======
->>>>>>> 11d2f68e2b666288141873d0ba5d0f973e37e744
 st.markdown(
     """
     <style>
@@ -25,11 +22,7 @@ st.markdown(
         color: #fff; /* Text color to contrast with the background */
     }
     .main {
-<<<<<<< HEAD
         background-image: linear-gradient(to right, #764BA2, #667EEA);  /* New gradient */
-=======
-        background-image: linear-gradient(to right, #5a85c6, #248ec5, #0095ba, #009aa9, #1a9d94);
->>>>>>> 11d2f68e2b666288141873d0ba5d0f973e37e744
         border-radius: 15px;
         padding: 20px;
         margin: 10px;
@@ -150,11 +143,7 @@ st.markdown(
     <div style="text-align: center; font-family: Arial, sans-serif; font-size: 14px;">  <!-- Reduced font size -->
         🌟 Powered by <b style="font-size: 16px;">TensorFlow</b>, <b style="font-size: 16px;">OpenCV</b>, and <b style="font-size: 16px;">Streamlit</b><br><br>
         <b style="font-size: 16px;">Made by:</b> Hitesh Kumar<br>
-<<<<<<< HEAD
         <a href="https://www.linkedin.com/in/hitesh-kumar-aiml/" target="_blank" style="color: #333; font-size: 16px;">LinkedIn</a> | 
-=======
-        <a href="https://www.linkedin.com/in/hitesh-kumar-aiml/" target="_blank" style="color: #0a66c2; font-size: 16px;">LinkedIn</a> | 
->>>>>>> 11d2f68e2b666288141873d0ba5d0f973e37e744
         <a href="https://github.com/Hiteshydv001" target="_blank" style="color: #333; font-size: 16px;">GitHub</a><br><br>
         🎉<b style="font-size: 16px;">Edunet-Shell Skills4Future AICTE Internship Project</b> (Nov-Dec)<br>
         Focused on <b style="font-size: 16px;">Green Skills</b> & <b style="font-size: 16px;">AI</b>.
