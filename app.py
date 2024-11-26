@@ -16,12 +16,11 @@ st.markdown(
     """
     <style>
     body {
-        background: linear-gradient(to right, #5a85c6, #248ec5, #0095ba, #009aa9, #1a9d94); /* Gradient background */
+        background: linear-gradient(to right, #5a85c6, #248ec5, #0095ba, #009aa9, #1a9d94); 
         font-family: Arial, sans-serif;
         color: #fff; /* Text color to contrast with the background */
     }
     .main {
-        background-color: rgba(255, 255, 255, 0.8);
         border-radius: 15px;
         padding: 20px;
         margin: 10px;
