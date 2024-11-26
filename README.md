@@ -55,10 +55,20 @@ An intuitive web-based application to classify waste into **Organic** or **Inorg
 
 ## 🤖 Model Details
 
-- **Architecture**: Convolutional Neural Network (CNN) with multiple layers for feature extraction and classification.  
-- **Input Size**: 150x150 pixels.  
-- **Output Classes**: Organic Waste (O), Inorganic Waste (R).  
-- **Preprocessing**: Normalized pixel values and data augmentation for robustness.  
+### **Architecture**
+- **Model Type**: Convolutional Neural Network (CNN)
+- **Layers**: Multiple convolutional and pooling layers for feature extraction, followed by fully connected layers for classification.
+
+### **Input Size**
+- **Image Dimensions**: 150x150 pixels.
+
+### **Output Classes**
+- **Organic Waste (O)**
+- **Inorganic Waste (R)**
+
+### **Preprocessing**
+- **Normalization**: Pixel values are normalized to a range of [0, 1].
+- **Data Augmentation**: Techniques like rotation, zoom, and horizontal flip applied to increase dataset variability and model robustness. 
 
 ---
 
@@ -83,8 +93,8 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ---
 
-## 🌍 Acknowledgments
+## 🌍Acknowledgments
 
-- **TensorFlow Community** for extensive documentation.  
-- **Streamlit Team** for a fantastic framework to build web apps.  
-- **OpenCV** for efficient image processing tools.
+- **TensorFlow Community** for extensive documentation and support in building and training the model.
+- **Streamlit Team** for providing a fantastic framework to develop and deploy web applications.
+- **OpenCV** for offering efficient image processing tools to enhance data handling and manipulation.
