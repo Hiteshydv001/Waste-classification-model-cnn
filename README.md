@@ -1,7 +1,7 @@
 # Waste-classification-model-cnn
 Internship project: AICTE || SHELL || EDUNET FOUNDATION
 
-**Deployment Link:** [Demo at Streamlit](https://content-based-movie-recommend.streamlit.app/)
+<a href="https://content-based-movie-recommend.streamlit.app/" target="_blank">Demo at Streamlit</a>
 
 # 🌿 Waste Classification App  
 
