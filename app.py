@@ -23,7 +23,7 @@ st.markdown(
     .main {
         background-image: linear-gradient(to right, #5a85c6, #248ec5, #0095ba, #009aa9, #1a9d94);
         border-radius: 15px;
-        padding: 20px;
+        padding: 15px;
         margin: 10px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     }
@@ -32,22 +32,22 @@ st.markdown(
         color: white;
         border: none;
         border-radius: 5px;
-        padding: 10px 20px;
+        padding: 8px 15px;
         cursor: pointer;
-        font-size: 14px;  /* Reduced font size */
+        font-size: 12px;  /* Further reduced font size */
     }
     .stButton button:hover {
         background-color: #45a049;
     }
     .header {
         font-family: 'Arial Black', sans-serif;
-        font-size: 35px;  /* Reduced font size */
+        font-size: 28px;  /* Reduced font size */
         color: #4CAF50;
         text-align: center;
     }
     .subheader {
         font-family: 'Arial', sans-serif;
-        font-size: 22px;  /* Reduced font size */
+        font-size: 18px;  /* Further reduced font size */
         color: #ffffff;
         text-align: center;
     }
@@ -55,7 +55,15 @@ st.markdown(
         border: none;
         height: 1px;
         background: #ddd;
-        margin: 20px 0;
+        margin: 15px 0;
+    }
+    .markdown-container {
+        padding: 15px;
+        background-color: #2e2e2e;
+        color: #ffffff;
+        border-radius: 8px;
+        box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+        font-size: 14px;  /* Reduced font size for readme */
     }
     </style>
     """,
@@ -139,20 +147,18 @@ elif input_mode == "Camera Capture":
 st.markdown("<hr>", unsafe_allow_html=True)
 st.markdown(
     """
-    <div style="text-align: center; font-family: Arial, sans-serif; font-size: 14px;">  <!-- Reduced font size -->
-        🌟 Powered by <b style="font-size: 16px;">TensorFlow</b>, <b style="font-size: 16px;">OpenCV</b>, and <b style="font-size: 16px;">Streamlit</b><br><br>
-        <b style="font-size: 16px;">Made by:</b> Hitesh Kumar<br>
-        <a href="https://www.linkedin.com/in/hitesh-kumar-aiml/" target="_blank" style="color: #0a66c2; font-size: 16px;">LinkedIn</a> | 
-        <a href="https://github.com/Hiteshydv001" target="_blank" style="color: #333; font-size: 16px;">GitHub</a><br><br>
-        🎉<b style="font-size: 16px;">Edunet-Shell Skills4Future AICTE Internship Project</b> (Nov-Dec)<br>
-        Focused on <b style="font-size: 16px;">Green Skills</b> & <b style="font-size: 16px;">AI</b>.
+    <div style="text-align: center; font-family: Arial, sans-serif; font-size: 12px;">  <!-- Further reduced font size -->
+        🌟 Powered by <b style="font-size: 14px;">TensorFlow</b>, <b style="font-size: 14px;">OpenCV</b>, and <b style="font-size: 14px;">Streamlit</b><br><br>
+        <b style="font-size: 14px;">Made by:</b> Hitesh Kumar<br>
+        <a href="https://www.linkedin.com/in/hitesh-kumar-aiml/" target="_blank" style="color: #0a66c2; font-size: 14px;">LinkedIn</a> | 
+        <a href="https://github.com/Hiteshydv001" target="_blank" style="color: #333; font-size: 14px;">GitHub</a><br><br>
+        🎉<b style="font-size: 14px;">Edunet-Shell Skills4Future AICTE Internship Project</b> (Nov-Dec)<br>
+        Focused on <b style="font-size: 14px;">Green Skills</b> & <b style="font-size: 14px;">AI</b>.
     </div>
     """,
     unsafe_allow_html=True,
 )
 
-
-import streamlit as st
 import requests
 
 # Fetch the raw content of the README file
@@ -164,15 +170,12 @@ st.markdown(
     """
     <style>
     .markdown-container {
-        padding-top: 20px;
-        padding-left: 20px;
-        padding-right: 20px;
-        padding-bottom: 20px;
-        background-color: #2e2e2e;  /* Dark background */
-        color: #ffffff;  /* White text for better visibility */
+        padding: 12px;
+        background-color: #2e2e2e;
+        color: #ffffff;
         border-radius: 8px;
         box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
-        font-size: 16px;  /* Adjust text size */
+        font-size: 12px;  /* Reduced font size for README */
     }
     </style>
     """,
