@@ -15,59 +15,22 @@ classes = {0: "Organic Waste (O)", 1: "Inorganic Waste (R)"}
 st.markdown(
     """
     <style>
-    body {
-        background: linear-gradient(135deg, #2c3e50, #3498db);
-        font-family: Arial, sans-serif;
-        color: #fff; /* Text color to contrast with the background */
-    }
-    .main {
-        background-color: white;
-        border-radius: 15px;
-        padding: 15px;
-        margin: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    }
     .stButton button {
-        background-color: #4CAF50;
-        color: white;
-        border: none;
-        border-radius: 5px;
-        padding: 8px 15px;
-        cursor: pointer;
-        font-size: 12px;  /* Further reduced font size */
+        background-color: #4CAF50 !important;  /* Make sure the color is applied */
+        color: white !important;
     }
     .stButton button:hover {
-        background-color: #45a049;
+        background-color: #45a049 !important;
     }
     .header {
-        font-family: 'Arial Black', sans-serif;
-        font-size: 28px;  /* Reduced font size */
-        color: #4CAF50;
-        text-align: center;
+        color: #4CAF50 !important;
     }
     .subheader {
-        font-family: 'Arial', sans-serif;
-        font-size: 18px;  /* Further reduced font size */
-        color: #ffffff;
-        text-align: center;
-    }
-    hr {
-        border: none;
-        height: 1px;
-        background: #ddd;
-        margin: 15px 0;
-    }
-    .markdown-container {
-        padding: 15px;
-        background-color: #2e2e2e;
-        color: #ffffff;
-        border-radius: 8px;
-        box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
-        font-size: 14px;  /* Reduced font size for readme */
+        color: #ffffff !important;
     }
     </style>
     """,
-    unsafe_allow_html=True,
+    unsafe_allow_html=True
 )
 
 # Header
