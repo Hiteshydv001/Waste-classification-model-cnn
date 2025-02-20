@@ -35,6 +35,13 @@ An intuitive web-based application to classify waste into **Organic** or **Inorg
 | PIL         | Image manipulation library.                                                |
 
 ---
+Directory structure:
+└── hiteshydv001-waste-classification-model-cnn/
+    ├── README.md
+    ├── app.py
+    ├── requirements.txt
+    └── waste_classification_model.h5
+---
 
 ## 📚 How It Works
 
